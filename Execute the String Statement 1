@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Read full name or single name from input
+        String name = scanner.nextLine();
+
+        // Print the required output
+        System.out.println("Hai " + name + "!    Welcome to Programming Language...");
+
+        scanner.close();
+    }
+}
