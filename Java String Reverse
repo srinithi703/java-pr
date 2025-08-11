@@ -1,0 +1,11 @@
+import java.util.*;
+public class main{
+public static void main(string[]args);
+{
+Scanner Sc= new scanner (system.in);
+string str1 = "madam";
+string str1 = Sc.nextline();
+stringBuffer str=new stringBuffer(strl);
+system.out.println(str,reverse());
+}
+
