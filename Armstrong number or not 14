@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int number;
+
+        
+        number = scanner.nextInt();
+
+       
+        if (number < 0) {
+            System.out.println("Invalid Input");
+            return;
+        }
+
+       
+        int temp = number;
+        int digits = 0;
+        while (temp > 0) {
+            temp /= 10;
+            digits++;
+        }
+
+      
+        temp = number;
+        int sum = 0;
+        while (temp > 0) {
+            int digit = temp % 10;
+            sum += Math.pow(digit, digits);
+            temp /= 10;
+        }
+
+      
+        if (sum == number) {
+            System.out.println("yes");
+        } else {
+            System.out.println("no");
+        }
+    }
+}
